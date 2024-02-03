@@ -52,11 +52,11 @@ export default function Home() {
           className={`bg-slate-800 flex min-h-screen flex-col items-center justify-center`}
         >
           {/* <h1 className="text-4xl font-extrabold text-gray-700"> */}
-            <img
-              class="w-48 h-48 rounded-full object-fill bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333]"
-              src="/avatar.jpeg"
-              alt="Rounded avatar"
-            />
+          <img
+            class="w-48 h-48 rounded-full object-fill bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333]"
+            src="/avatar.jpeg"
+            alt="Rounded avatar"
+          />
           {/* </h1> */}
 
           <h1 className="mt-4 mb-4 text-3xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
@@ -177,7 +177,7 @@ export default function Home() {
                       Senior MERN Stack Engineer 👨‍💻🚀
                     </h3>
                     <p className="leading-tight text-justify w-full">
-                      Jan 2023 - Present
+                      @ Pixelpk Technologies Jan 2023 - Present
                     </p>
                   </div>
                 </div>
@@ -196,7 +196,7 @@ export default function Home() {
                       Senior Web Engineer 🌐💼
                     </h3>
                     <p className="leading-tight text-justify">
-                      May 2022 - Dec 2022
+                      @ Geekinate May 2022 - Dec 2022
                     </p>
                   </div>
                 </div>
@@ -215,7 +215,7 @@ export default function Home() {
                       MERN Stack Developer 🚀💻
                     </h3>
                     <p className="leading-tight text-justify">
-                      Apr 2021 - Apr 2022
+                      @ SAS Technology Apr 2021 - Apr 2022
                     </p>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export default function Home() {
                       MERN Stack Developer 🌐💻
                     </h3>
                     <p className="leading-tight text-justify">
-                      Sep 2020 - Mar 2021
+                      @ Cipher Savvy Sep 2020 - Mar 2021
                     </p>
                   </div>
                 </div>
@@ -252,7 +252,7 @@ export default function Home() {
                       Web Development Intern 👶🌱
                     </h3>
                     <p className="leading-tight text-justify">
-                      Feb 2020 - Apr 2020
+                      @ Seven Technologies Feb 2020 - Apr 2020
                     </p>
                   </div>
                 </div>
