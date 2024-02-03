@@ -47,13 +47,13 @@ export default function Home() {
         <link rel="icon" href="/avatar.jpeg" />
       </Head>
 
-      <div className={` ${recursive.className} w-full`}>
+      <div className={` ${recursive.className} w-full bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333] animate-gradient`}>
         <div
-          className={`bg-slate-800 flex min-h-screen flex-col items-center justify-center`}
+          className={` flex min-h-screen flex-col items-center justify-center`}
         >
           {/* <h1 className="text-4xl font-extrabold text-gray-700"> */}
           <img
-            class="w-48 h-48 rounded-full object-fill bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333]"
+            class="w-48 h-48 rounded-full object-fill bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333] animate-gradient"
             src="/avatar.jpeg"
             alt="Rounded avatar"
           />
@@ -80,7 +80,7 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className=" bg-slate-700 px-5 min-h-fit pb-10 ">
+        <div className="  px-3 min-h-fit pb-10 ">
           <h3 className="text-center py-5 text-2xl font-light leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">
             <Typewriter
               options={{
@@ -91,7 +91,7 @@ export default function Home() {
             />
           </h3>
           <div className="container mx-auto  flex flex-col-reverse gap-4   items-center">
-            <div className="p-5 rounded-lg bg-white shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className="p-5 rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
               <div className="flex  pb-5 gap-2 ">
                 <div className="w-3 h-3 rounded-full bg-red-600  text-center">
                   <span />
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className=" bg-slate-700 min-h-screen ">
+        <div className="  min-h-screen ">
           <h3 className="text-center pt-5 text-2xl font-light leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">
             <Typewriter
               options={{
@@ -261,8 +261,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="bg-slate-500 min-h-fit ">
-          <h3 className="text-center pt-5 text-2xl font-light leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">
+        <div className="px-3 min-h-fit ">
+          <h3 className="text-center py-5 text-2xl font-light leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">
             <Typewriter
               options={{
                 strings: ["Skills", "Technologies"],
@@ -271,7 +271,7 @@ export default function Home() {
               }}
             />
           </h3>
-          <div className=" p-3 flex flex-wrap space-x-3 space-y-1 lg:max-w-5xl lg:mx-auto">
+          <div className=" p-5  flex flex-wrap space-x-3 space-y-1  lg:mx-auto rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
             <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
               <Icon icon="devicon:react" fontSize={"36"} />
             </div>
