@@ -142,7 +142,7 @@ export default function Home() {
                   </div>
                   <div className="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1">
-                      Senior MERN Stack Engineer
+                      Senior MERN Stack Engineer 👨‍💻🚀
                     </h3>
                     <p className="leading-tight text-justify w-full">
                       Jan 2023 - Present
@@ -161,7 +161,7 @@ export default function Home() {
                   </div>
                   <div className="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1">
-                      Senior Web Engineer
+                      Senior Web Engineer 🌐💼
                     </h3>
                     <p className="leading-tight text-justify">
                       May 2022 - Dec 2022
@@ -180,7 +180,7 @@ export default function Home() {
                   </div>
                   <div className="bg-yellow-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1 text-gray-50">
-                      MERN Stack Developer
+                      MERN Stack Developer 🚀💻
                     </h3>
                     <p className="leading-tight text-justify">
                       Apr 2021 - Apr 2022
@@ -199,7 +199,7 @@ export default function Home() {
                   </div>
                   <div className="bg-yellow-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1 text-gray-50">
-                      MERN Stack Developer
+                      MERN Stack Developer 🌐💻
                     </h3>
                     <p className="leading-tight text-justify">
                       Sep 2020 - Mar 2021
@@ -217,7 +217,7 @@ export default function Home() {
                   </div>
                   <div className="bg-gray-400 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1 text-gray-50">
-                      Web Development Intern
+                      Web Development Intern 👶🌱
                     </h3>
                     <p className="leading-tight text-justify">
                       Feb 2020 - Apr 2020
