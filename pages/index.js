@@ -1,4 +1,4 @@
-import { contactLinks, experiences, socialLinks } from "@/utils";
+import { contactLinks, socialLinks } from "@/utils";
 import { Icon } from "@iconify/react";
 import { Fira_Code } from "next/font/google";
 import Head from "next/head";
@@ -131,32 +131,99 @@ export default function Home() {
           <div className="container mx-auto  flex flex-col-reverse gap-4   items-center p-5">
             <div className="container">
               <div className="flex flex-col md:grid grid-cols-12 text-gray-50">
-                {experiences.map((experience, index) => (
-                  <div key={index} className="flex md:contents">
-                    <div
-                      className={`col-start-2 col-end-4 mr-10 md:mx-auto relative`}
-                    >
-                      <div className="h-full w-6 flex items-center justify-center">
-                        <div
-                          className={`h-full w-1 ${experience.color} pointer-events-none`}
-                        ></div>
-                      </div>
-                      <div
-                        className={`w-6 h-6 absolute top-1/2 -mt-3 rounded-full ${experience.color} shadow text-center`}
-                      ></div>
+                <div className="flex md:contents">
+                  <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1 bg-green-500 pointer-events-none"></div>
                     </div>
-                    <div
-                      className={`${experience.color} col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full`}
-                    >
-                      <h3 className="font-semibold text-lg mb-1">
-                        {experience.title}
-                      </h3>
-                      <p className="leading-tight text-justify w-full">
-                        {experience.date}
-                      </p>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
+                      <i className="fas fa-check-circle text-white"></i>
                     </div>
                   </div>
-                ))}
+                  <div className="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                    <h3 className="font-semibold text-lg mb-1">
+                      Senior MERN Stack Engineer
+                    </h3>
+                    <p className="leading-tight text-justify w-full">
+                      Jan 2023 - Present
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex md:contents">
+                  <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1 bg-green-500 pointer-events-none"></div>
+                    </div>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
+                      <i className="fas fa-check-circle text-white"></i>
+                    </div>
+                  </div>
+                  <div className="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                    <h3 className="font-semibold text-lg mb-1">
+                      Senior Web Engineer
+                    </h3>
+                    <p className="leading-tight text-justify">
+                      May 2022 - Dec 2022
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex md:contents">
+                  <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1 bg-yellow-500 pointer-events-none"></div>
+                    </div>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-yellow-500 shadow text-center">
+                      <i className="fas fa-times-circle text-white"></i>
+                    </div>
+                  </div>
+                  <div className="bg-yellow-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                    <h3 className="font-semibold text-lg mb-1 text-gray-50">
+                      MERN Stack Developer
+                    </h3>
+                    <p className="leading-tight text-justify">
+                      Apr 2021 - Apr 2022
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex md:contents">
+                  <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1 bg-yellow-500 pointer-events-none"></div>
+                    </div>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-yellow-500 shadow text-center">
+                      <i className="fas fa-exclamation-circle text-gray-50"></i>
+                    </div>
+                  </div>
+                  <div className="bg-yellow-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                    <h3 className="font-semibold text-lg mb-1 text-gray-50">
+                      MERN Stack Developer
+                    </h3>
+                    <p className="leading-tight text-justify">
+                      Sep 2020 - Mar 2021
+                    </p>
+                  </div>
+                </div>
+                <div className="flex md:contents">
+                  <div className="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                    <div className="h-full w-6 flex items-center justify-center">
+                      <div className="h-full w-1 bg-gray-400 pointer-events-none"></div>
+                    </div>
+                    <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-gray-400 shadow text-center">
+                      <i className="fas fa-exclamation-circle text-gray-50"></i>
+                    </div>
+                  </div>
+                  <div className="bg-gray-400 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
+                    <h3 className="font-semibold text-lg mb-1 text-gray-50">
+                      Web Development Intern
+                    </h3>
+                    <p className="leading-tight text-justify">
+                      Feb 2020 - Apr 2020
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
