@@ -301,7 +301,7 @@ export default function Home() {
               <Icon icon="logos:bootstrap" fontSize={"36"} />
             </div>
             <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
-              <Icon icon="logos:tailwindcss" fontSize={"36"} />
+              <Icon icon="mdi:tailwind" fontSize={"36"} />
             </div>
             <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
               <Icon icon="logos:material-ui" fontSize={"36"} />
