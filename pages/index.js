@@ -51,13 +51,13 @@ export default function Home() {
         <div
           className={`bg-slate-800 flex min-h-screen flex-col items-center justify-center`}
         >
-          <h1 className="text-4xl font-extrabold text-gray-700">
+          {/* <h1 className="text-4xl font-extrabold text-gray-700"> */}
             <img
-              class="w-40 h-40 rounded-full object-fill"
+              class="w-48 h-48 rounded-full object-fill bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333]"
               src="/avatar.jpeg"
               alt="Rounded avatar"
             />
-          </h1>
+          {/* </h1> */}
 
           <h1 className="mt-4 mb-4 text-3xl font-bold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
             Ammar Bin Shakir
