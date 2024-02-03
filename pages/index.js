@@ -14,6 +14,11 @@ export default function Home() {
     <>
       <Head>
         <title>Ammar Bin Shakir - Fullstack Engineer</title>
+        <meta
+          name="description"
+          content="👋 Hey there! I’m Ammar Bin Shakir, a fullstack engineer experienced in React, Node.js, Next.js, React Native, and AWS services. I specialize in building dynamic web and mobile applications with a strong emphasis on utilizing AWS to enhance scalability, security, and overall performance. If you need help or have any questions regarding fullstack development, AWS integrations, or any of these technologies, feel free to reach out. I’m here to assist you in bringing your ideas to life!"
+        />
+        <link rel="icon" href="/avatar.jpeg" />
       </Head>
       <div className={` ${recursive.className} w-full`}>
         <div
