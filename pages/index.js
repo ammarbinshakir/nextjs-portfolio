@@ -47,7 +47,9 @@ export default function Home() {
         <link rel="icon" href="/avatar.jpeg" />
       </Head>
 
-      <div className={` ${recursive.className} w-full bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333] animate-gradient`}>
+      <div
+        className={` ${recursive.className} w-full bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333] animate-gradient`}
+      >
         <div
           className={` flex min-h-screen flex-col items-center justify-center`}
         >
@@ -169,12 +171,13 @@ export default function Home() {
                       <div className="h-full w-1 bg-green-500 pointer-events-none"></div>
                     </div>
                     <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
-                      <i className="fas fa-check-circle text-white"></i>
+                      {/* <i className="fas fa-check-circle text-white"></i> */}
+                      🌟
                     </div>
                   </div>
                   <div className="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1">
-                      Senior MERN Stack Engineer 👨‍💻🚀
+                      Senior MERN Stack Engineer
                     </h3>
                     <p className="leading-tight text-justify w-full">
                       @ Pixelpk Technologies Jan 2023 - Present
@@ -188,12 +191,13 @@ export default function Home() {
                       <div className="h-full w-1 bg-green-500 pointer-events-none"></div>
                     </div>
                     <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center">
-                      <i className="fas fa-check-circle text-white"></i>
+                      {/* <i className="fas fa-check-circle text-white"></i> */}
+                      🚀
                     </div>
                   </div>
                   <div className="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1">
-                      Senior Web Engineer 🌐💼
+                      Senior Web Engineer
                     </h3>
                     <p className="leading-tight text-justify">
                       @ Geekinate May 2022 - Dec 2022
@@ -207,12 +211,13 @@ export default function Home() {
                       <div className="h-full w-1 bg-yellow-500 pointer-events-none"></div>
                     </div>
                     <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-yellow-500 shadow text-center">
-                      <i className="fas fa-times-circle text-white"></i>
+                      {/* <i className="fas fa-times-circle text-white"></i> */}
+                      🏃🏾‍♂️
                     </div>
                   </div>
                   <div className="bg-yellow-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1 text-gray-50">
-                      MERN Stack Developer 🚀💻
+                      MERN Stack Developer
                     </h3>
                     <p className="leading-tight text-justify">
                       @ SAS Technology Apr 2021 - Apr 2022
@@ -226,12 +231,13 @@ export default function Home() {
                       <div className="h-full w-1 bg-yellow-500 pointer-events-none"></div>
                     </div>
                     <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-yellow-500 shadow text-center">
-                      <i className="fas fa-exclamation-circle text-gray-50"></i>
+                      {/* <i className="fas fa-exclamation-circle text-gray-50"></i> */}
+                      🚶🏾‍♂️
                     </div>
                   </div>
                   <div className="bg-yellow-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1 text-gray-50">
-                      MERN Stack Developer 🌐💻
+                      MERN Stack Developer
                     </h3>
                     <p className="leading-tight text-justify">
                       @ Cipher Savvy Sep 2020 - Mar 2021
@@ -244,12 +250,13 @@ export default function Home() {
                       <div className="h-full w-1 bg-gray-400 pointer-events-none"></div>
                     </div>
                     <div className="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-gray-400 shadow text-center">
-                      <i className="fas fa-exclamation-circle text-gray-50"></i>
+                      {/* <i className="fas fa-exclamation-circle text-gray-50"></i> */}
+                      🧍🏽
                     </div>
                   </div>
                   <div className="bg-gray-400 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full">
                     <h3 className="font-semibold text-lg mb-1 text-gray-50">
-                      Web Development Intern 👶🌱
+                      Web Development Intern
                     </h3>
                     <p className="leading-tight text-justify">
                       @ Seven Technologies Feb 2020 - Apr 2020
