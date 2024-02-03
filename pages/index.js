@@ -18,8 +18,35 @@ export default function Home() {
           name="description"
           content="👋 Hey there! I’m Ammar Bin Shakir, a fullstack engineer experienced in React, Node.js, Next.js, React Native, and AWS services. I specialize in building dynamic web and mobile applications with a strong emphasis on utilizing AWS to enhance scalability, security, and overall performance. If you need help or have any questions regarding fullstack development, AWS integrations, or any of these technologies, feel free to reach out. I’m here to assist you in bringing your ideas to life!"
         />
+        <meta
+          property="og:title"
+          content="Ammar Bin Shakir - Fullstack Engineer"
+        />
+        <meta
+          property="og:description"
+          content="👋 Hey there! I’m Ammar Bin Shakir, a fullstack engineer experienced in React, Node.js, Next.js, React Native, and AWS services. I specialize in building dynamic web and mobile applications with a strong emphasis on utilizing AWS to enhance scalability, security, and overall performance. If you need help or have any questions regarding fullstack development, AWS integrations, or any of these technologies, feel free to reach out. I’m here to assist you in bringing your ideas to life!"
+        />
+        <meta
+          property="og:image"
+          content="https://ammar.geekscrew.xyz/avatar.jpeg"
+        />
+        <meta property="og:url" content="https://ammar.geekscrew.xyz" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="Ammar Bin Shakir - Fullstack Engineer"
+        />
+        <meta
+          name="twitter:description"
+          content="👋 Hey there! I’m Ammar Bin Shakir, a fullstack engineer experienced in React, Node.js, Next.js, React Native, and AWS services. I specialize in building dynamic web and mobile applications with a strong emphasis on utilizing AWS to enhance scalability, security, and overall performance. If you need help or have any questions regarding fullstack development, AWS integrations, or any of these technologies, feel free to reach out. I’m here to assist you in bringing your ideas to life!"
+        />
+        <meta
+          name="twitter:image"
+          content="https://ammar.geekscrew.xyz/avatar.jpeg"
+        />
         <link rel="icon" href="/avatar.jpeg" />
       </Head>
+
       <div className={` ${recursive.className} w-full`}>
         <div
           className={`bg-slate-800 flex min-h-screen flex-col items-center justify-center`}
