@@ -93,7 +93,7 @@ export default function Home() {
             />
           </h3>
           <div className="container mx-auto  flex flex-col-reverse gap-4   items-center">
-            <div className="p-5 rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
+            <div className="p-5 rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <div className="flex  pb-5 gap-2 ">
                 <div className="w-3 h-3 rounded-full bg-red-600  text-center">
                   <span />
@@ -109,7 +109,7 @@ export default function Home() {
                 <h5 className="mb-2 text-xl font-medium leading-tight text-neutral-800 dark:text-neutral-50">
                   Hi :)
                 </h5>
-                <p className="mb-4 text-base text-neutral-600 dark:text-neutral-200">
+                <p className="mb-4 text-base dark:text-neutral-50">
                   👋 Hey there! I&rsquo;m Ammar Bin Shakir, a fullstack engineer
                   experienced in React, Node.js, Next.js, React Native, and AWS
                   services. I specialize in building dynamic web and mobile
@@ -278,68 +278,68 @@ export default function Home() {
               }}
             />
           </h3>
-          <div className=" p-5  flex flex-wrap space-x-3 space-y-1  lg:mx-auto rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-700">
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+          <div className=" p-5  flex flex-wrap space-x-3 space-y-1  lg:mx-auto rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="devicon:react" fontSize={"36"} />
             </div>
-            <div className="  rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className="  rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:html-5" fontSize={"36"} />
             </div>
-            <div className="block rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className="block rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:css-3" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:javascript" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:nextjs-icon" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:gatsby" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:bootstrap" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="mdi:tailwind" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:material-ui" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:ant-design" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:nodejs-icon" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:express" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:mongodb-icon" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:cassandra" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:elasticsearch" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:redis" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:socket-io" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:graphql" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:aws" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:netlify" fontSize={"36"} />
             </div>
-            <div className=" rounded-lg bg-white p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] dark:bg-neutral-400">
+            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <Icon icon="logos:heroku" fontSize={"36"} />
             </div>
           </div>
