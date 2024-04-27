@@ -39,7 +39,7 @@ body {
 }
 
 .animate-gradient {
-  animation: gradientAnimation 6s linear infinite;
+  animation: gradientAnimation 8s linear infinite;
   background-size: 200% 200%;
   background-position: 100% 50%;
 }

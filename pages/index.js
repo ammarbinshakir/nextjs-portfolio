@@ -2,14 +2,24 @@ import { contactLinks, socialLinks } from "@/utils";
 import { Icon } from "@iconify/react";
 import { Fira_Code } from "next/font/google";
 import Head from "next/head";
+import { useState } from "react";
 import Typewriter from "typewriter-effect";
+import { icons } from "./api/utils";
 const recursive = Fira_Code({ weight: "400", subsets: ["latin-ext"] });
 
 export default function Home() {
+  const [searchQuery, setSearchQuery] = useState("");
+
   const handleLinkClick = (link) => {
     window.open(link, "_blank");
   };
+  const handleInputChange = (event) => {
+    setSearchQuery(event.target.value);
+  };
 
+  const filteredIcons = icons.filter((icon) =>
+    icon.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
   return (
     <>
       <Head>
@@ -49,7 +59,7 @@ export default function Home() {
 
       <div
         className={` ${recursive.className} w-full bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333] animate-gradient`}
-      >
+        >
         <div
           className={` flex min-h-screen flex-col items-center justify-center`}
         >
@@ -82,7 +92,7 @@ export default function Home() {
           </h3>
         </div>
 
-        <div className="  px-3 min-h-fit pb-10 ">
+        <div className="  px-3 min-h-fit mb-5 ">
           <h3 className="text-center py-5 text-2xl font-light leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">
             <Typewriter
               options={{
@@ -151,8 +161,58 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div className="px-3 min-h-fit mb-5 ">
+          <h3 className="text-center py-5 text-2xl font-light leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">
+            <Typewriter
+              options={{
+                strings: ["Skills", "Technologies", "Tech-stacks"],
+                autoStart: true,
+                loop: true,
+              }}
+            />
+          </h3>
+          <div className="flex justify-center space-x-2 my-5">
+            <div className=" p-3 rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
+              {filteredIcons.length > 0 && searchQuery.length > 0 && (
+                <Icon icon="solar:ghost-smile-bold" fontSize={"36"} />
+              )}
+              {filteredIcons.length === 0 && searchQuery.length > 0 && (
+                <Icon icon="mynaui:sad-ghost" fontSize={"36"} />
+              )}
+              {searchQuery.length === 0 && (
+                <Icon icon="mingcute:search-line" fontSize={"36"} />
+              )}
+            </div>
+            <div className=" rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
+              {/* <h1>KNow more about me</h1> */}
 
-        <div className="  min-h-screen ">
+              <input
+                className="p-4 bg-transparent focus:outline-none"
+                placeholder="Search my skills..."
+                value={searchQuery}
+                onChange={handleInputChange}
+              />
+            </div>
+          </div>
+          {filteredIcons.length > 0 ? (
+            <div className=" p-5  flex flex-wrap space-x-3 space-y-1  lg:mx-auto rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
+              {filteredIcons.map((icon, index) => (
+                <div
+                  key={index}
+                  className="rounded-lg p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                >
+                  <Icon icon={icon.icon} fontSize={"36"} />
+                </div>
+              ))}
+            </div>
+          ) : (
+            <div className=" p-5  flex items-center flex-col space-x-3 space-y-1  lg:mx-auto rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
+              <Icon icon="mynaui:sad-ghost" fontSize={"36"} />
+              <p className="text-inherit mt-2">I am constantly learning...</p>
+            </div>
+          )}
+        </div>
+        <div className="  min-h-screen mt-5">
           <h3 className="text-center pt-5 text-2xl font-light leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">
             <Typewriter
               options={{
@@ -264,83 +324,6 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="px-3 min-h-fit ">
-          <h3 className="text-center py-5 text-2xl font-light leading-none tracking-tight text-gray-900 md:text-4xl lg:text-4xl dark:text-white">
-            <Typewriter
-              options={{
-                strings: ["Skills", "Technologies"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h3>
-          <div className=" p-5  flex flex-wrap space-x-3 space-y-1  lg:mx-auto rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="devicon:react" fontSize={"36"} />
-            </div>
-            <div className="  rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:html-5" fontSize={"36"} />
-            </div>
-            <div className="block rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:css-3" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:javascript" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:nextjs-icon" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:gatsby" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:bootstrap" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="mdi:tailwind" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:material-ui" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:ant-design" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:nodejs-icon" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:express" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:mongodb-icon" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:cassandra" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:elasticsearch" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:redis" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:socket-io" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:graphql" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:aws" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:netlify" fontSize={"36"} />
-            </div>
-            <div className=" rounded-lg  p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
-              <Icon icon="logos:heroku" fontSize={"36"} />
             </div>
           </div>
         </div>
