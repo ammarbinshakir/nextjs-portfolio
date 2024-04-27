@@ -187,7 +187,7 @@ export default function Home() {
               {/* <h1>KNow more about me</h1> */}
 
               <input
-                className="p-4 bg-transparent focus:outline-none"
+                className="p-4 bg-transparent focus:outline-none placeholder-inherit"
                 placeholder="Search my skills..."
                 value={searchQuery}
                 onChange={handleInputChange}
