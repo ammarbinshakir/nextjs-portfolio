@@ -57,15 +57,13 @@ export default function Home() {
         <link rel="icon" href="/avatar.jpeg" />
       </Head>
 
-      <div
-        className={` ${recursive.className} w-full bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333] animate-gradient`}
-        >
+      <div className={` ${recursive.className} w-full bg-[#282828]`}>
         <div
           className={` flex min-h-screen flex-col items-center justify-center`}
         >
           {/* <h1 className="text-4xl font-extrabold text-gray-700"> */}
           <img
-            class="w-48 h-48 rounded-full object-fill bg-gradient-to-r p-[6px] from-[#a4e6bd] via-[#ccc85f] to-[#ea3333] animate-gradient"
+            class="w-48 h-48 rounded-full object-fill bg-slate-50 p-[6px]"
             src="/avatar.jpeg"
             alt="Rounded avatar"
           />
@@ -103,7 +101,7 @@ export default function Home() {
             />
           </h3>
           <div className="container mx-auto  flex flex-col-reverse gap-4   items-center">
-            <div className="p-5 rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
+            <div className="p-5 rounded-lg bg-[#414141]  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] ">
               <div className="flex  pb-5 gap-2 ">
                 <div className="w-3 h-3 rounded-full bg-red-600  text-center">
                   <span />
@@ -172,7 +170,7 @@ export default function Home() {
             />
           </h3>
           <div className="flex justify-center space-x-2 my-5">
-            <div className=" p-3 rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
+            <div className=" bg-[#414141] p-3 rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
               {filteredIcons.length > 0 && searchQuery.length > 0 && (
                 <Icon icon="solar:ghost-smile-bold" fontSize={"36"} />
               )}
@@ -183,7 +181,7 @@ export default function Home() {
                 <Icon icon="mingcute:search-line" fontSize={"36"} />
               )}
             </div>
-            <div className=" rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
+            <div className=" rounded-lg  bg-[#414141] shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
               {/* <h1>KNow more about me</h1> */}
 
               <input
@@ -195,13 +193,20 @@ export default function Home() {
             </div>
           </div>
           {filteredIcons.length > 0 ? (
-            <div className=" p-5  flex flex-wrap space-x-3 space-y-1  lg:mx-auto rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
+            <div className="bg-[#414141] p-5  flex flex-wrap space-x-3 space-y-3  lg:mx-auto rounded-lg  shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]  ">
               {filteredIcons.map((icon, index) => (
                 <div
                   key={index}
-                  className="rounded-lg p-3 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]"
+                  className="rounded-lg p-2 outline outline-2 outline-[#313131]
+                  flex 
+                   "
                 >
-                  <Icon icon={icon.icon} fontSize={"36"} />
+                  <p class="flex items-center text-base font-extrabold dark:text-white">
+                    {icon.title}
+                    <span class="text-2xl font-semibold me-2 px-2.5 py-0.5 rounded  ms-2">
+                      <Icon icon={icon.icon} fontSize={"36"} />
+                    </span>
+                  </p>
                 </div>
               ))}
             </div>
